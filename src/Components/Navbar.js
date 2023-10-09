@@ -1,26 +1,61 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useMediaQuery } from "@react-hook/media-query";
+
 
 const Navbar = () => {
+  const [toggle, settoggle] = useState(false);
+
+  const toggleMenu = () => {
+    settoggle(!toggle);
+  };
+
+
+
+
   return (
-    <div>
-      <div className="flex flex-row justify-around bg-slate-200 py-5 items-center">
+    <div className="bg-slate-200 w-full top-0 left-0 fixed">
+      <div className="relative md:flex justify-between py-4 items-center">
         <div>
-          <span className="flex text-xl font-extrabold ">SUMAN BALAYAR</span>
+          <span className="text-lg font-extrabold ">SUMAN BOOKS</span>
         </div>
+        
+          <ul className="md:flex items-center space-x-10 hidden">
+            <div className="md:flex space-x-4 items-center text-md font-light">
+              <li>ARTICLES</li>
+              <li>BOOKS</li>
+              <li>COURSES</li>
+              <li>NEWSLETTER</li>
+            </div>
 
-        <ul className="flex flex-row space-x-5 text-md font-light">
-          <li>ARTICLES</li>
-          <li>BOOKS</li>
-          <li>COURSES</li>
-          <li>NEWSLETTER</li>
-        </ul>
+            <div className="md:flex space-x-4 items-center">
+              <span className="text-md font-light">LOG IN</span>
+              <button className="px-10 py-2 border-2 border-black hover:bg-black hover:text-white font-medium rounded-full">
+                SIGN UP
+              </button>
+            </div>
+          </ul>
 
-        <div className="flex flex-row space-x-3 items-center">
-          <span className="text-md font-light">LOG IN</span>
-          <button className="px-10 py-2 border-2 border-black hover:bg-black hover:text-white font-medium rounded-full">
-            SIGN UP
-          </button>
-        </div>
+          <ul className={`absolute md:hidden top-[61px] w-full items-center bg-slate-200 space-y-4 justify-center transform ${toggle? "block":"hidden"}`}>
+            <div className="flex flex-col items-center space-y-4">
+              <li className="hover:bg-blue-500 w-fit">ARTICLES</li>
+              <li>BOOKS</li>
+              <li>COURSES</li>
+              <li>NEWSLETTER</li>
+            </div>
+
+            <div className="flex flex-col items-center space-y-4">
+              <span>LOG IN</span>
+              <button className="px-3 py-2 border-2 border-black hover:bg-black hover:text-white font-medium rounded-full">
+                SIGN UP
+              </button>
+            </div>
+          </ul>
+
+        <GiHamburgerMenu
+          className="absolute cursor-pointer block md:hidden right-8 top-6 scale-110"
+          onClick={toggleMenu}
+        />
       </div>
       <hr className="border-black" />
     </div>
