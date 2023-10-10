@@ -14,7 +14,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="bg-slate-200 w-full top-0 left-0 fixed">
+    <div className="bg-slate-200 w-full top-0 left-0">
       <div className="relative md:flex justify-between py-4 items-center">
         <div>
           <span className="text-lg font-extrabold ">SUMAN BOOKS</span>
