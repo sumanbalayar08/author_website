@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="bg-slate-200">
-        <div className="flex flex-col items-center justify-center pt-[2%] mb-[8%] px-[4%]">
+        <div className="flex flex-col items-center justify-center py-[4%] px-[2%]">
           <div className="md:flex">
             <span className="text-8xl font-semibold text-center">
               5 Minutes That Might
@@ -17,7 +17,7 @@ const Home = () => {
           <div className="flex flex-row items-center justify-center h-fit">
             <div>
               <img
-                className="w-full scale-[60%]"
+                className="scale-[75%]"
                 src={image1}
                 alt="Phone Image"
               />
