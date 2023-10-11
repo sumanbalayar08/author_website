@@ -1,4 +1,6 @@
 import React from "react";
+import {CiTwitter,CiFacebook,CiInstagram,CiLinkedin} from 'react-icons/ci'
+
 
 const Footer = () => {
   return (
@@ -33,13 +35,18 @@ const Footer = () => {
             <li>SIGN UP</li>
           </ul>
         </div>
-        <div className="flex">
+        <div className="flex space-x-40">
           <ul className="flex flex-col text-sm font-serif space-y-2">
             <li>Privacy Policy</li>
             <li>Cookies Settings</li>
             <li>Terms and Conditions</li>
           </ul>
-          <div>Social Icons</div>
+          <div className="flex space-x-5">
+            <CiTwitter className="scale-150"/>
+            <CiFacebook className="scale-150"/>
+            <CiInstagram className="scale-150"/>
+            <CiLinkedin className="scale-150"/>
+          </div>
         </div>
       </div>
     </div>

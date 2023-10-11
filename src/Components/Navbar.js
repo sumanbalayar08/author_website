@@ -11,8 +11,6 @@ const Navbar = () => {
   };
 
 
-
-
   return (
     <div className="bg-slate-200 w-full top-0 left-0">
       <div className="relative md:flex justify-between py-4 items-center px-4">
@@ -38,7 +36,7 @@ const Navbar = () => {
 
           <ul className={`absolute md:hidden top-[61px] w-full items-center bg-slate-200 space-y-4 justify-center transform ${toggle? "block":"hidden"}`}>
             <div className="flex flex-col items-center space-y-4">
-              <li className="hover:bg-blue-500 w-fit">ARTICLES</li>
+              <li>ARTICLES</li>
               <li>BOOKS</li>
               <li>COURSES</li>
               <li>NEWSLETTER</li>
