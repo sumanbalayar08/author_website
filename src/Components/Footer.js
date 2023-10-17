@@ -4,7 +4,7 @@ import { CiTwitter, CiFacebook, CiInstagram, CiLinkedin } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="text-white bg-zinc-800">
-      <div className="flex-1 md:flex md:justify-around md:px-[2%] md:py-[6%]">
+      <div className="flex-1 md:flex md:justify-between md:px-[4%] md:py-[6%]">
         <div className="flex-col md:w-96 md:space-y-4">
           <div className="text-2xl font-bold items-center justify-center py-[6%] md:py-0 text-center md:text-left">
             SUMAN BALAYAR
