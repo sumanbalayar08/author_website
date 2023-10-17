@@ -82,9 +82,9 @@ const Home = () => {
       <hr className="border-black" />
 
 
-      <div className="flex flex-col-reverse md:flex-row px-[2%] py-[10%] justify-center bg-orange-600">
-        <div className="flex flex-col space-y-5 ">
-          <div className="font-bold text-lg text-center md:text-left">5 MINUTES EACH WEEK THAT MIGHT CHANGE YOUR <br/>LIFE</div>
+      <div className="flex flex-col-reverse md:flex-row px-[4%] py-[5%] justify-center bg-orange-600">
+        <div className="flex flex-col space-y-5 justify-center ">
+          <div className="font-bold text-lg md:text-3xl text-center md:text-justify">5 MINUTES EACH WEEK THAT MIGHT CHANGE YOUR LIFE</div>
           <div className="text-lg font-serif text-center md:text-left">
             Enter your email address below to sign up for my free newsletter,
             Your Next Breakthrough. Each week, you’ll receive a few prompts and
@@ -109,7 +109,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <img className="w-1/3 md:w2/3" src={image2} alt="Slanted Phone"/>
+          <img className="w-1/3 md:w-2/3" src={image2} alt="Slanted Phone"/>
         </div>
       </div>
 
